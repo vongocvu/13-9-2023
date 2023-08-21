@@ -1,0 +1,23 @@
+@media (min-width: 1401px) {
+  .my-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .my-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .my-container {
+    width: 98%;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-container {
+    width: 98%;
+  }
+}

@@ -1,0 +1,27 @@
+.main-background {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexColCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-transition {
+  transition: all 0.5s ease;
+}
+
+.active_dot {
+  background-color: red !important;
+}
