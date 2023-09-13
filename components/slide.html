@@ -1,55 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/root.css" />
-    <link rel="stylesheet" href="../css/reponsive.css" />
-  </head>
-  <body>
-    <div class="flexRowCenter">
-      <div class="my-container">
-        <div class="grid grid-cols-12 gap-[5px]">
-          <div class="col-span-8">
-            <div class="slider overflow-hidden relative">
-              <div class="slides flex no-wrap my-transition"></div>
-              <div
-                id="btn_prev"
-                class="absolute top-[50%] left-[10px] cursor-pointer w-[40px] h-[40px] flexCenter font-bold text-[30px] bg-white translate-y-[-50%] rounded-full"
-              >
-                <
-              </div>
-              <div
-                id="btn_next"
-                class="absolute top-[50%] right-[10px] cursor-pointer w-[40px] h-[40px] flexCenter font-bold text-[30px] bg-white translate-y-[-50%] rounded-full"
-              >
-                >
-              </div>
-              <div
-                class="dots_slide flex absolute bottom-[10px] left-[50%] translate-x-[-50%]"
-              ></div>
-            </div>
+<div class="flexRowCenter mt-[30px]">
+  <div class="my-container">
+    <div class="grid grid-cols-12 gap-[5px]">
+      <div class="col-span-8 h-full">
+        <div class="slider overflow-hidden h-full relative">
+          <div
+            class="dots_slide flex absolute bottom-[10px] left-[50%] translate-x-[-50%] z-[10]"
+          ></div>
+          <div class="slides flex no-wrap h-full my-transition"></div>
+          <div
+            id="btn_prev"
+            class="absolute top-[50%] left-[10px] cursor-pointer w-[40px] h-[40px] flexCenter font-bold bg-white translate-y-[-50%] rounded-full"
+          >
+            <i class="fas fa-chevron-left"></i>
           </div>
-          <div class="col-span-4 flex flex-col gap-[5px]">
-            <div class="w-full h-[50%]">
-              <img
-                src="https://cf.shopee.vn/file/vn-50009109-f697b5c9550bc1a45bcaedc5add22ffa_xhdpi"
-                alt=""
-              />
-            </div>
-            <div class="w-full h-[50%]">
-              <img
-                src="https://cf.shopee.vn/file/vn-50009109-2dfc82f2afd7cad9e1126202e5952e31_xhdpi"
-                alt=""
-              />
-            </div>
+          <div
+            id="btn_next"
+            class="absolute top-[50%] right-[10px] cursor-pointer w-[40px] h-[40px] flexCenter font-bold bg-white translate-y-[-50%] rounded-full"
+          >
+            <i class="fas fa-chevron-right"></i>
           </div>
         </div>
       </div>
+      <div class="col-span-4 h-full flex flex-col gap-[5px]">
+        <div class="w-full h-[50%]">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-f697b5c9550bc1a45bcaedc5add22ffa_xhdpi"
+            alt=""
+          />
+        </div>
+        <div class="w-full h-[50%]">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-2dfc82f2afd7cad9e1126202e5952e31_xhdpi"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
-    <script src="../js/slide.js"></script>
-  </body>
-</html>
+  </div>
+</div>

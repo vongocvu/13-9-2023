@@ -25,3 +25,7 @@
 .active_dot {
   background-color: red !important;
 }
+
+.hover_opacity:hover {
+  opacity: 0.8;
+}

@@ -3,22 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./public/logo/pngwing.com.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
     <title>Booking.com | Trang chính thức</title>
     <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
+
     <link rel="stylesheet" href="./css/root.css" type="text/css" />
     <link rel="stylesheet" href="./css/base.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/product.css" type="text/css" />
     <link rel="stylesheet" href="./css/reponsive.css" type="text/css" />
+    <script src="./js/importComponent.js"></script>
   </head>
   <body>
-    <iframe
-      class="w-full"
-      src="./components/header.html"
-      frameborder="0"
-    ></iframe>
-    <iframe
-      class="w-full h-[300px]"
-      src="./components/slide.html"
-      frameborder="0"
-    ></iframe>
+    <div id="header"></div>
+    <div class="pb-[30px]">
+      <div id="slide"></div>
+      <div id="banner_hotword"></div>
+    </div>
+    <div class="bg-[#ededed]">
+      <div id="categorys"></div>
+    </div>
+    <div class="bg-[#ededed]">
+      <div id="products"></div>
+    </div>
+
+    <script>
+      showComponent("./components/header.html", "header");
+      showComponent("./components/slide.html", "slide");
+      showComponent("./components/banner_hotword.html", "banner_hotword");
+      showComponent("./components/categorys.html", "categorys");
+      showComponent("./components/products.html", "products");
+    </script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/banner_hotword.js"></script>
+    <script src="./js/categorys.js"></script>
+    <script src="./js/products.js"></script>
   </body>
 </html>

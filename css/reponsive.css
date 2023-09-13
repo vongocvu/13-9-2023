@@ -1,6 +1,10 @@
 @media (min-width: 1401px) {
   .my-container {
-    width: 70%;
+    width: 60%;
+  }
+
+  .card-product-item {
+    width: calc((100% / 6) - 10px);
   }
 }
 
@@ -8,16 +12,28 @@
   .my-container {
     width: 90%;
   }
+
+  .card-product-item {
+    width: calc((100% / 4) - 10px);
+  }
 }
 
 @media (max-width: 1024px) {
   .my-container {
     width: 98%;
   }
+
+  .card-product-item {
+    width: calc((100% / 3) - 10px);
+  }
 }
 
 @media (max-width: 768px) {
   .my-container {
     width: 98%;
+  }
+
+  .card-product-item {
+    width: calc((100% / 2) - 10px);
   }
 }
